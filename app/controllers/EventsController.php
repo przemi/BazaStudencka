@@ -8,9 +8,19 @@ class EventsController extends BaseController {
         return View::make('events.index');
     }
 
-    public function showIndexAdd()
+    public function showCreate()
     {
-        return View::make('events.add-index');
+        return View::make('events.create');
+    }
+
+    public function showEdit($id)
+    {
+        return View::make('events.edit');
+    }
+
+    public function showEvent($id)
+    {
+        return View::make('events.show');
     }
 
 }

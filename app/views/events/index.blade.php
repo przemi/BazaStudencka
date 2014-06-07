@@ -21,7 +21,7 @@
                 <button type="button" class="btn btn-primary">Szczegóły</button>
            </div>
            <div class="row text-center">
-                <a href="/events/add"> <button type="button" class="btn btn-primary">Dodaj wydarzenie</button></a>
+                <a href="/events/create"> <button type="button" class="btn btn-primary">Dodaj wydarzenie</button></a>
            </div>
        </div>
    </div>
