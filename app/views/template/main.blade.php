@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui-1.10.4.custom.min.css">
     <link rel="stylesheet" href="/css/style.css">
 
 
@@ -47,8 +48,9 @@
 </div><!-- /.container -->
 
 @section('headerJs')
-    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-1.10.2.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-ui-1.10.4.custom.min.js"></script>
 @show
 </body>
 </html>

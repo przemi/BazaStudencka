@@ -15,14 +15,16 @@
                    <th>Autor</th>
                    <th></th>
                </thead>
+               @foreach($events as $key => $event)
                <tr>
-                   <td>Testowe wydarzenie</td>
-                   <td>Testowa lokalizacja</td>
-                   <td>12-06-2014</td>
-                   <td>Testowy opis</td>
-                   <td>Jan Kowalski</td>
+                   <td>{{$event->name}}  </td>
+                   <td>{{$event->localization->name}}  </td>
+                   <td>{{$event->date}}  </td>
+                   <td>{{$event->info}}  </td>
+                   <td>{{$event->user->nick}}  </td>
                    <td><button type="button" class="btn btn-primary btn-sm">Szczegóły</button></td>
                </tr>
+               @endforeach
            </table>
        </div>
        <div class="col-md-4 menu-right">

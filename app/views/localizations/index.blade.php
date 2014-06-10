@@ -13,17 +13,19 @@
                    <th>Autor</th>
                    <th></th>
                </thead>
+               @foreach($localizations as $k => $loc)
                <tr>
-                   <td>Testowa lokalizacja</td>
-                   <td>Testowy adres</td>
-                   <td>Jan Kowalski</td>
+                   <td>{{ $loc->name }}</td>
+                   <td>{{ $loc->city }} {{ $loc->street }}</td>
+                   <td>{{ $loc->user->nick }}</td>
                    <td><button type="button" class="btn btn-primary btn-sm">Szczegóły</button></td>
                </tr>
+               @endforeach
            </table>
        </div>
        <div class="col-md-4 menu-right">
            <div class="row text-center">
-                <a href="/localizations/create"> <button type="button" class="btn btn-primary">Dodaj lokalizacje</button></a>
+                <a href="/localizations/create"> <button type="button" class="btn btn-primary">Dodaj lokalizację</button></a>
            </div>
        </div>
    </div>

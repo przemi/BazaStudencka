@@ -5,17 +5,31 @@ class EventsController extends BaseController {
 
     public function showIndex()
     {
-        return View::make('events.index');
+        $events = Events::where('active', '=', '1') -> with('localization', 'user') -> get();
+        return View::make('events.index', compact('events'));
     }
 
     public function showCreate()
     {
-        return View::make('events.create');
+        $localizations = Localization::where('active', '=', '1')->get();
+        return View::make('events.create', compact('localizations'));
     }
 
     public function store()
     {
-        return View::make('events.index');
+        //var_dump(Input::all());
+
+        $event = Events::create(array(
+                'name' => Input::get('name'),
+                'date' => Input::get('date'),
+                'info' => Input::get('info'),
+                'localization_id' => Input::get('localization'),
+                'user_id' => 1
+            )
+        );
+
+        return Redirect::route('events.index');
+
     }
 
     public function showEdit($id)

@@ -21,9 +21,9 @@
             <div class="form-group">
                 <label for="localization">Lokalizacja wydarzenia:</label>
                 <select class="form-control" id="localization" name="localization" >
-                    <option value="0">---wybierz lokalizację---</option>
-                    <option value="1">Poznań - Nowa Lokalizacja 1</option>
-                    <option value="2">Poznań - Nowa Lokalizacja 2</option>
+                    @foreach($localizations as $k => $loc)
+                        <option value="{{ $loc->id }}">{{ $loc->name }} - {{ $loc->city }} {{ $loc->street }}</option>
+                    @endforeach
                 </select>
             </div>
 
@@ -40,4 +40,13 @@
 
     </div>
 </div>
+@stop
+
+@section('headerJs')
+@parent
+    <script type="text/javascript" >
+        $(document).ready(function(){
+           $('#date').datepicker( { dateFormat: "yy-mm-dd" });
+        });
+    </script>
 @stop
