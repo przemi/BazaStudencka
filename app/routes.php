@@ -16,6 +16,11 @@ Route::get('/events/create', array(
     'uses' => 'EventsController@showCreate'
 ));
 
+Route::post('/events/store', array(
+    'as' => 'events.store',
+    'uses' => 'EventsController@store'
+));
+
 Route::get('/events/edit/{id}', array(
     'as' => 'events.edit',
     'uses' => 'EventsController@showEdit'
@@ -35,6 +40,11 @@ Route::get('/localizations', array(
 Route::get('/localizations/create', array(
     'as' => 'localizations.create',
     'uses' => 'LocalizationsController@showCreate'
+));
+
+Route::post('/localizations/store', array(
+    'as' => 'localizations.store',
+    'uses' => 'LocalizationsController@store'
 ));
 
 Route::get('/localizations/edit/{id}', array(

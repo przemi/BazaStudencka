@@ -13,6 +13,11 @@ class LocalizationsController extends BaseController {
         return View::make('localizations.create');
     }
 
+    public function store()
+    {
+        return View::make('localizations.index');
+    }
+
     public function showEdit($id)
     {
         return View::make('localizations.edit');

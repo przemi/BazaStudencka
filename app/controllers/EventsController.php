@@ -13,6 +13,11 @@ class EventsController extends BaseController {
         return View::make('events.create');
     }
 
+    public function store()
+    {
+        return View::make('events.index');
+    }
+
     public function showEdit($id)
     {
         return View::make('events.edit');
