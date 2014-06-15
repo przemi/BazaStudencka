@@ -40,14 +40,12 @@
 
 @section('headerJs')
 @parent
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" >
 
     var mapa;
     var geocoder = new google.maps.Geocoder();
     var marker ;
     var infowindow = new google.maps.InfoWindow();
-    var correlation = 0;
 
     function initialize() {
 
@@ -82,36 +80,34 @@
             $('#lat').val(lat_d);
             $('#lng').val(lng_d);
             var latlng = new google.maps.LatLng(lat_d, lng_d);
-            if(correlation == 0){
-                geocoder.geocode( {'latLng': latlng}, function(results, status) {
-                    if (status == google.maps.GeocoderStatus.OK) {
+            geocoder.geocode( {'latLng': latlng}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
 
-                        infowindow.setContent(results[0].formatted_address);
-                        infowindow.open(mapa, marker);
+                    infowindow.setContent(results[0].formatted_address);
+                    infowindow.open(mapa, marker);
 
-                        var adressA = results[0].formatted_address.split(', ');
-                        var kod = adressA[1];
-                        var rx = /\d\d-\d\d\d/;
-                        var wynik = rx.exec(kod);
-                        if (wynik)
-                        {
-                            kod = wynik[0];
-                            adressA[1] = adressA[1].replace(rx, '');
-                            adressA[1] = $.trim(adressA[1]);
-                        }
-                        else
-                        {
-                            kod = '';
-                        }
-
-                        //$('#id_kod_pocztowy').val(kod);
-
-                        $("#city").val(adressA[1]);
-                        $('#street').val(adressA[0]);
-
+                    var adressA = results[0].formatted_address.split(', ');
+                    var kod = adressA[1];
+                    var rx = /\d\d-\d\d\d/;
+                    var wynik = rx.exec(kod);
+                    if (wynik)
+                    {
+                        kod = wynik[0];
+                        adressA[1] = adressA[1].replace(rx, '');
+                        adressA[1] = $.trim(adressA[1]);
                     }
-                });
-            }
+                    else
+                    {
+                        kod = '';
+                    }
+
+                    //$('#id_kod_pocztowy').val(kod);
+
+                    $("#city").val(adressA[1]);
+                    $('#street').val(adressA[0]);
+
+                }
+            });
         });
     }
 
@@ -127,38 +123,36 @@
         }
         $('#lat').val(location.lat());
         $('#lng').val(location.lng());
-        if(correlation == 0){
-            geocoder.geocode( {'latLng': location}, function(results, status) {
-                if (status == google.maps.GeocoderStatus.OK) {
+        geocoder.geocode( {'latLng': location}, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
 
-                    infowindow.setContent('<div style="height:30px;">'+results[0].formatted_address+'</div>');
-                    infowindow.open(mapa, marker);
+                infowindow.setContent('<div style="height:30px;">'+results[0].formatted_address+'</div>');
+                infowindow.open(mapa, marker);
 
-                    var adressA = results[0].formatted_address.split(', ');
+                var adressA = results[0].formatted_address.split(', ');
 
-                    var kod = adressA[1];
-                    var rx = /\d\d-\d\d\d/;
-                    var wynik = rx.exec(kod);
-                    if (wynik)
-                    {
-                        kod = wynik[0];
-                        adressA[1] = adressA[1].replace(rx, '');
-                        adressA[1] = $.trim(adressA[1]);
-                    }
-                    else
-                    {
-                        kod = '';
-                    }
-
-                    //$('#code').val(kod);
-
-                    $("#city").val(adressA[1]);
-                    $('#street').val(adressA[0]);
-
-
+                var kod = adressA[1];
+                var rx = /\d\d-\d\d\d/;
+                var wynik = rx.exec(kod);
+                if (wynik)
+                {
+                    kod = wynik[0];
+                    adressA[1] = adressA[1].replace(rx, '');
+                    adressA[1] = $.trim(adressA[1]);
                 }
-            });
-        }
+                else
+                {
+                    kod = '';
+                }
+
+                //$('#code').val(kod);
+
+                $("#city").val(adressA[1]);
+                $('#street').val(adressA[0]);
+
+
+            }
+        });
         initListenerDrag() ;
 
     }

@@ -37,7 +37,19 @@ class LocalizationsController extends BaseController {
 
     public function showLocalization($id)
     {
-        return View::make('localizations.show');
+        $localization = Localization::find($id);
+
+        return View::make('localizations.show', compact('localization'));
     }
 
+    public function delete($id)
+    {
+        $localization = Localization::find($id);
+
+        $localization->active = 0;
+        $localization->touch();
+        $localization->save();
+
+        return 0;
+    }
 }

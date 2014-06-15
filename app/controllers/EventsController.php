@@ -17,8 +17,6 @@ class EventsController extends BaseController {
 
     public function store()
     {
-        //var_dump(Input::all());
-
         $event = Events::create(array(
                 'name' => Input::get('name'),
                 'date' => Input::get('date'),
@@ -29,7 +27,6 @@ class EventsController extends BaseController {
         );
 
         return Redirect::route('events.index');
-
     }
 
     public function showEdit($id)
@@ -39,7 +36,20 @@ class EventsController extends BaseController {
 
     public function showEvent($id)
     {
-        return View::make('events.show');
+        $event = Events::find($id);
+
+        return View::make('events.show', compact('event'));
+    }
+
+    public function delete($id)
+    {
+        $event = Events::find($id);
+
+        $event->active = 0;
+        $event->touch();
+        $event->save();
+
+        return 0;
     }
 
 }

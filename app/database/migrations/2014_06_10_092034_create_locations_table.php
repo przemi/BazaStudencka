@@ -19,8 +19,8 @@ class CreateLocationsTable extends Migration {
             $t->string('name');
             $t->string('city');
             $t->string('street');
-            $t->decimal('lat');
-            $t->decimal('lng');
+            $t->decimal('lat', 10, 8);
+            $t->decimal('lng', 10, 8);
             $t->boolean('active')->default(1);
             $t->timestamps();
 

@@ -5,7 +5,7 @@
        <h1>Lokalizacje</h1>
    </div>
    <div class="row">
-       <div class="col-md-8">
+       <div class="col-md-9">
            <table class="table table-hover">
                <thead>
                    <th>Nazwa</th>
@@ -18,15 +18,81 @@
                    <td>{{ $loc->name }}</td>
                    <td>{{ $loc->city }} {{ $loc->street }}</td>
                    <td>{{ $loc->user->nick }}</td>
-                   <td><button type="button" class="btn btn-primary btn-sm">Szczegóły</button></td>
+                   <td>
+                        <button type="button" class="btn btn-primary btn-sm show_localization" target="{{ URL::route('localizations.view', array($loc->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
+                        <button type="button" class="btn btn-danger btn-sm delete_localization" target="{{ URL::route('localizations.delete', array($loc->id)) }}"  >Usuń</button>
+                   </td>
                </tr>
                @endforeach
            </table>
        </div>
-       <div class="col-md-4 menu-right">
+       <div class="col-md-3 menu-right">
            <div class="row text-center">
                 <a href="/localizations/create"> <button type="button" class="btn btn-primary">Dodaj lokalizację</button></a>
            </div>
        </div>
    </div>
+
+
+<!-- large modal -->
+<div class="modal fade bs-example-modal-lg" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+<!-- small modal -->
+<div class="modal fade bs-example-modal-sm" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Usuwanie lokalizacji</h4>
+            </div>
+            <div class="modal-body">
+                Potwierdź usunięcie lokalizacji.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
+                <button type="button" class="btn btn-primary" id="delete">Usuń</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@stop
+
+@section('headerJs')
+@parent
+<script type="text/javascript" >
+    $(document).ready(function(){
+
+        $('.table').on('click', '.show_localization', function(){
+            hrf = $(this).attr('target');
+            $.get( hrf, function( data ) {
+                $('#modal .modal-content').html(data);
+            });
+        });
+
+        $('.table').on('click', '.delete_localization', function(){
+            hrf = $(this).attr('target');
+            $('#modal-delete').modal('show');
+            $('#delete').click(function(){
+                $.ajax({
+                    type: "POST",
+                    url: hrf,
+                    assync:false,
+                    cache:false,
+                    success: function( data ) {
+                        location.reload();
+                    }
+                });
+                return false;
+            });
+        });
+
+    });
+</script>
 @stop
