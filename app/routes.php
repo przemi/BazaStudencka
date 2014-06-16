@@ -5,6 +5,11 @@ Route::get('/', function()
 	return View::make('home');
 });
 
+//autentykcja
+Route::get('/login', ['as' => 'login', 'uses'=>'SessionsController@create']);
+Route::get('/logout', ['as' => 'logout', 'uses'=>'SessionsController@destroy']);
+Route::post('/login/store', ['as' => 'sessions.store', 'uses'=>'SessionsController@store']);
+
 //wydarzenia
     Route::get('/events', array(
         'as' => 'events.index',
@@ -41,6 +46,11 @@ Route::get('/', function()
         'uses' => 'EventsController@delete'
     ));
 
+    Route::post('/events/search/', array(
+        'as' => 'events.search',
+        'uses' => 'EventsController@search'
+    ));
+
 //lokalizacje
     Route::get('/localizations', array(
         'as' => 'localizations.index',
@@ -75,5 +85,10 @@ Route::get('/', function()
     Route::post('/localizations/delete/{id}', array(
         'as' => 'localizations.delete',
         'uses' => 'LocalizationsController@delete'
+    ));
+
+    Route::post('/localizations/search/', array(
+        'as' => 'localizations.search',
+        'uses' => 'LocalizationsController@search'
     ));
 

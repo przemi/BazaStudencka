@@ -22,7 +22,7 @@ class EventsController extends BaseController {
                 'date' => Input::get('date'),
                 'info' => Input::get('info'),
                 'localization_id' => Input::get('localization'),
-                'user_id' => 1
+                'user_id' => Auth::user()->id
             )
         );
 
@@ -65,6 +65,13 @@ class EventsController extends BaseController {
         $event->save();
 
         return Redirect::route('events.index');
+    }
+
+    public function search(){
+        $search = Input::get('search');
+        $events = Events::where('name', 'LIKE', "%$search%")->where('active', '=', '1')->with('user')->get();
+
+        return View::make('events.search', compact('events', 'search'));
     }
 
 }

@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration {
             $t->string('name');
             $t->string('nick');
             $t->string('password');
+            $t->string('remember_token');
             $t->integer('role');
             $t->boolean('active')->default(1);
             $t->timestamps();

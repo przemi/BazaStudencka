@@ -19,9 +19,15 @@
                    <td>{{ $loc->city }} {{ $loc->street }}</td>
                    <td>{{ $loc->user->nick }}</td>
                    <td>
-                       <button type="button" class="btn btn-primary btn-sm show_localization" target="{{ URL::route('localizations.view', array($loc->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
-                       <a href="{{ route('localizations.edit', array($loc->id)) }}"><button type="button" class="btn btn-primary btn-sm">Edytuj</button></a>
-                       <button type="button" class="btn btn-danger btn-sm delete_localization" target="{{ URL::route('localizations.delete', array($loc->id)) }}"  >Usuń</button>
+                       @if (Auth::check())
+                           <button type="button" class="btn btn-primary btn-sm show_localization" target="{{ URL::route('localizations.view', array($loc->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
+                           @if(Auth::user()->id == $loc->user_id)
+                                <a href="{{ route('localizations.edit', array($loc->id)) }}"><button type="button" class="btn btn-primary btn-sm">Edytuj</button></a>
+                                <button type="button" class="btn btn-danger btn-sm delete_localization" target="{{ URL::route('localizations.delete', array($loc->id)) }}"  >Usuń</button>
+                           @endif
+                       @else
+                           <button type="button" class="btn btn-sm btn-primary " disabled="disabled" >Szczegóły</button>
+                       @endif
                    </td>
                </tr>
                @endforeach
@@ -29,7 +35,9 @@
        </div>
        <div class="col-md-3 menu-right">
            <div class="row text-center">
+               @if (Auth::check())
                 <a href="/localizations/create"> <button type="button" class="btn btn-primary">Dodaj lokalizację</button></a>
+               @endif
            </div>
        </div>
    </div>

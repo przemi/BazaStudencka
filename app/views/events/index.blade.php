@@ -21,9 +21,15 @@
                    <td>{{ substr($event->date, 0 , -9) }}  </td>
                    <td>{{$event->user->nick}}  </td>
                    <td>
-                       <button type="button" class="btn btn-primary btn-sm show_event" target="{{ URL::route('events.view', array($event->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
-                       <a href="{{ URL::route('events.edit', array($event->id)) }}"><button type="button" class="btn btn-primary btn-sm">Edytuj</button></a>
-                       <button type="button" class="btn btn-danger btn-sm delete_event" target="{{ URL::route('events.delete', array($event->id)) }}"  >Usuń</button>
+                       @if (Auth::check())
+                           <button type="button" class="btn btn-primary btn-sm show_event" target="{{ URL::route('events.view', array($event->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
+                           @if(Auth::user()->id == $event->user_id)
+                                <a href="{{ URL::route('events.edit', array($event->id)) }}"><button type="button" class="btn btn-primary btn-sm">Edytuj</button></a>
+                                <button type="button" class="btn btn-danger btn-sm delete_event" target="{{ URL::route('events.delete', array($event->id)) }}"  >Usuń</button>
+                           @endif
+                       @else
+                           <button type="button" class="btn btn-sm btn-primary " disabled="disabled" >Szczegóły</button>
+                       @endif
                    </td>
                </tr>
                @endforeach
@@ -31,7 +37,9 @@
        </div>
        <div class="col-md-3 menu-right">
            <div class="row text-center">
+               @if (Auth::check())
                 <a href="/events/create"> <button type="button" class="btn btn-primary">Dodaj wydarzenie</button></a>
+               @endif
            </div>
        </div>
    </div>

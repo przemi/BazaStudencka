@@ -37,6 +37,14 @@
                 <li><a href="/events">Wydarzenia</a></li>
                 <li><a href="/localizations">Lokalizacje</a></li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                @if (Auth::guest())
+                <li><a href="#">Zarejestruj się</a></li>
+                <li><a href="/login">Zaloguj</a></li>
+                @else
+                <li><a href="/logout">Wyloguj</a></li>
+                @endif
+            </ul>
         </div><!--/.nav-collapse -->
     </div>
 </div>
@@ -52,6 +60,7 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/jquery-ui-1.10.4.custom.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 @show
 </body>
 </html>

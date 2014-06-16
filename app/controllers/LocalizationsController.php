@@ -23,7 +23,7 @@ class LocalizationsController extends BaseController {
                 'street' => Input::get('street'),
                 'lat'   => Input::get('lat'),
                 'lng'   => Input::get('lng'),
-                'user_id' => 1
+                'user_id' => Auth::user()->id
             )
         );
 
@@ -66,5 +66,11 @@ class LocalizationsController extends BaseController {
         $localization->save();
 
         return Redirect::route('localizations.index');
+    }
+
+    public function search(){
+        $localizations = Localization::where('name', 'LIKE', "%".Input::get('search')."%")->where('active', '=', '1')->with('user')->get();
+
+        return View::make('localizations.search', compact('$events'));
     }
 }

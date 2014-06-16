@@ -2,8 +2,417 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2c36b2e-adf9-4396-813d-1a6c03d61c8a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/SessionsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sessions/create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/events/search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/localizations/search.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/resources/css/whoops.base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/resources/views/frame_code.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/README.git" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/create_pear_package.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/package.xml.tpl" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/.gitattributes" afterPath="$PROJECT_DIR$/vendor/laravel/framework/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/.gitignore" afterPath="$PROJECT_DIR$/vendor/laravel/framework/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/.travis.yml" afterPath="$PROJECT_DIR$/vendor/laravel/framework/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/.travis.yml" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_06_10_092119_create_users_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_06_10_092119_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/AliasLoader.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/AliasLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ArrayStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ArrayStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/ArrayableInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/ArrayableInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Artisan.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Artisan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AssetPublishCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AssetPublishCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/AssetPublisher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/AssetPublisher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/AuthManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AutoloadCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/AutoloadCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/BcryptHasher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/BcryptHasher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/BeanstalkdConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/BeanstalkdConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/BeanstalkdQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/BeanstalkdQueue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/CHANGES" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/CHANGES" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/laravel/framework/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/CacheBasedSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/CacheBasedSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ChangesCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ChangesCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ClearCompiledCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ClearCompiledCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Client.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Command.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/CommandCreatorServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/CommandCreatorServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/CommandMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/CommandMakeCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/CommandsServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/CommandsServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/CompilerInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/CompilerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Composer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Composer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ConfigPublishCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ConfigPublishCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ConfigPublisher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ConfigPublisher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/ConnectionInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/ConnectionInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolverInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolverInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectorInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/ConnectorInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/ConnectorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/ControllerGenerator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/ControllerGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/CookieJar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/CookieJar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/CookieServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/CookieServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/CookieSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/CookieSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DKIMSigner.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DKIMSigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Redis/Database.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Redis/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/DatabaseReminderRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/DatabaseReminderRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/DatabaseSessionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/DatabaseUserProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/DatabaseUserProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DomainKeySigner.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/DomainKeySigner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/DownCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/DownCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/Engine.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/Engine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/EngineInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/EngineInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/EngineResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/EngineResolver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/EnvironmentCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/EnvironmentCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/ErrorLogHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/ErrorLogHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/EventServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventsController.php" afterPath="$PROJECT_DIR$/app/controllers/EventsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/events/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/ExceptionDisplayerInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/ExceptionDisplayerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/ExceptionServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/ExceptionServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/ExistenceAwareInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/ExistenceAwareInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/FileLoader.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/FileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/FileStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FingersCrossedHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FingersCrossedHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Fluent.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Fluent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Form.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/GenericUser.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/GenericUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Grammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Grammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/HTML.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/HTML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/Handler.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/Handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/HashServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/HashServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/HasherInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/HasherInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/HtmlServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/HtmlServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/IronConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/IronConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/IronJob.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/IronJob.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/IronQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/IronQueue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/JsonableInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/JsonableInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/KeyGeneratorServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/KeyGeneratorServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/LICENSE" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/LoaderInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/LoaderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/LoaderInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/LoaderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LocalizationsController.php" afterPath="$PROJECT_DIR$/app/controllers/LocalizationsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/LogServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Logger.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/MailServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/MailServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/MaintenanceServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/MaintenanceServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Console/MakeControllerCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Console/MakeControllerCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Capsule/Manager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Capsule/Manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Manager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/MassAssignmentException.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/MassAssignmentException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/MemcachedConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/MemcachedConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/MemcachedStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/MemcachedStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Message.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/Message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/MessageProviderInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/MessageProviderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/MigrationCreator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/MigrationCreator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/MigrationRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/MigrationRepositoryInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/MySqlGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/Esmtp/Auth/NTLMAuthenticatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/NamespacedItemResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/NamespacedItemResolver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/NewRelicHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/NewRelicHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/OptimizeServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/OptimizeServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/Package.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/Package.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/PackageCreator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/PackageCreator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/Paginator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/Paginator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Paginator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Paginator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/PasswordBroker.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/PasswordBroker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/PlainDisplayer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/PlainDisplayer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/PostgresGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/PresenceVerifierInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/PresenceVerifierInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/Presenter.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/Presenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/PublisherServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/PublisherServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Queue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/README.md" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RavenHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RavenHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/RemindableInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/RemindableInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/ReminderRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/ReminderRepositoryInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/ReminderServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Reminders/ReminderServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/RemoteServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Remote/RemoteServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/RenderableInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/RenderableInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Repository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/Repository.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/Repository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Response.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/ResponsePreparerInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Contracts/ResponsePreparerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/RouteListServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/RouteListServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/RoutesCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/RoutesCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/SeedCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Console/SeedCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/SeedServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/SeedServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Seeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SendmailTransport.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SendmailTransport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/SerializableClosure.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/SerializableClosure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ServerServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ServerServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/SessionManager.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/SessionManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/SessionServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingTrait.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SqsConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SqsConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/SqsQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/SqsQueue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/Starter.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/Starter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Store.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Store.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/StoreInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/StoreInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Str.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Str.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/SubscribeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/SubscribeCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Subscriber.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/Subscriber.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/SymfonyDisplayer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/SymfonyDisplayer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SyncConnector.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Connectors/SyncConnector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/TinkerServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/TinkerServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/TokenMismatchException.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/TokenMismatchException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/Translator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/Translator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/UpCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/UpCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/UserInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/UserInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/UserProviderInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/UserProviderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/VERSION" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/VERSION" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Validator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/ValidatorInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Matching/ValidatorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/View.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/ViewFinderInterface.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/ViewFinderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewPublishCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewPublishCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ViewPublisher.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/ViewPublisher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/WhoopsDisplayer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/WhoopsDisplayer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/WinCacheStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/WinCacheStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/Console/WorkbenchMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/Console/WorkbenchMakeCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/WorkbenchServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/WorkbenchServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Writer.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Writer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/XCacheStore.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/XCacheStore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/blank.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/blank.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/changes.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/changes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/command.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/command.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Encryption/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Events/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Hashing/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Mail/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Redis/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Redis/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Translation/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Optimize/config.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Optimize/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/controller.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/controller.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/create.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/create.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/create.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/create.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Console/stubs/database.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Console/stubs/database.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/destroy.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/destroy.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/edit.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/edit.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/gitignore.txt" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/gitignore.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.blade.php" afterPath="$PROJECT_DIR$/app/views/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/index.blade.php" afterPath="$PROJECT_DIR$/app/views/events/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/localizations/index.blade.php" afterPath="$PROJECT_DIR$/app/views/localizations/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/index.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/index.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/template/main.blade.php" afterPath="$PROJECT_DIR$/app/views/template/main.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/_samples/charsets/iso-2022-jp/one.txt" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/_samples/charsets/iso-2022-jp/one.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/phpunit.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/phpunit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/phpunit.xml" afterPath="$PROJECT_DIR$/vendor/laravel/framework/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/phpunit.xml" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/plain.composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/plain.composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/resources/plain.html" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Exception/resources/plain.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/plain.provider.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/plain.provider.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/provider.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Workbench/stubs/provider.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/readme.md" afterPath="$PROJECT_DIR$/vendor/laravel/framework/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/reminders.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/reminders.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/show.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/show.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/views/simple.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/views/simple.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/views/slider-3.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/views/slider-3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/views/slider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pagination/views/slider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/start.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/store.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/store.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/update.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/stubs/update.stub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/update.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Generators/stubs/update.stub" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BazaStudencka.iws" />
@@ -26,7 +435,125 @@
     <favorites_list name="BazaStudencka" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="main.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/template/main.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="0" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1512">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="42" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/events/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="19" selection-start="0" selection-end="4068" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="2352">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/localizations/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="53" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2352">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalizationsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/LocalizationsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="115" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0" vertical-offset="771" max-vertical-offset="1722">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventsController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/EventsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="85" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.80126184" vertical-offset="729" max-vertical-offset="1743">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/localizations/search.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/events/search.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="44" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2163">
+              <folding>
+                <marker date="1402947557000" expanded="true" signature="71:129" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="147:1221" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="191:1213" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="233:1202" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="253:409" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="474:1161" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="709:1143" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1377:1487" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1417:1480" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1453:1469" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1655:2363" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1695:2356" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1731:2345" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="1770:1981" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="2018:2085" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="2124:2330" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="2431:3253" placeholder="..." />
+                <marker date="1402947557000" expanded="true" signature="2466:3242" placeholder="{...}" />
+                <marker date="1402947557000" expanded="true" signature="2526:2693" placeholder="{...}" />
+                <marker date="1402947557000" expanded="true" signature="2611:2681" placeholder="{...}" />
+                <marker date="1402947557000" expanded="true" signature="2756:3233" placeholder="{...}" />
+                <marker date="1402947557000" expanded="true" signature="2887:3221" placeholder="{...}" />
+                <marker date="1402947557000" expanded="true" signature="2912:3175" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
+                <marker date="1402947557000" expanded="true" signature="3091:3157" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="33" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="43" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -48,30 +575,36 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/hello.php" />
         <option value="$PROJECT_DIR$/public/style.css" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/views/events/add-index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/hello.blade.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_06_10_092104_create_events_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_06_10_092119_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/models/Event.php" />
         <option value="$PROJECT_DIR$/app/models/Events.php" />
         <option value="$PROJECT_DIR$/app/models/Localization.php" />
         <option value="$PROJECT_DIR$/app/views/events/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/template/main.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_06_10_092034_create_locations_table.php" />
         <option value="$PROJECT_DIR$/app/views/events/show.blade.php" />
         <option value="$PROJECT_DIR$/app/views/localizations/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/localizations/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/views/localizations/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/events/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/events/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sessions/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/SessionsController.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_06_10_092119_create_users_table.php" />
+        <option value="$PROJECT_DIR$/app/views/template/main.blade.php" />
         <option value="$PROJECT_DIR$/app/views/localizations/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/views/events/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/events/search.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/controllers/LocalizationsController.php" />
         <option value="$PROJECT_DIR$/app/controllers/EventsController.php" />
-        <option value="$PROJECT_DIR$/app/views/events/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -136,6 +669,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BazaStudencka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BazaStudencka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BazaStudencka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BazaStudencka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -155,28 +720,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BazaStudencka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BazaStudencka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,6 +821,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BazaStudencka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BazaStudencka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -352,7 +917,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../www.laravel9.dev/laravel" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;loca&#10;rou&#10;localizations/ind&#10;main&#10;cre&#10;crea&#10;template&#10;in&#10;eve&#10;inde&#10;e&#10;loc&#10;ev&#10;lco&#10;create&#10;events&#10;rout&#10;lo&#10;index&#10;data&#10;app.&#10;live te" />
+    <property name="SearchEverywhereHistory" value="ev&#10;loca&#10;rout&#10;rou&#10;main&#10;localizations/ind&#10;cre&#10;crea&#10;template&#10;in&#10;eve&#10;inde&#10;e&#10;loc&#10;lco&#10;create&#10;events&#10;lo&#10;index&#10;data&#10;app.&#10;live te" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -414,7 +979,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -429,12 +994,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -456,41 +1021,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/LocalizationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="38" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1155" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/template/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1302" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="328" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="693" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/LocalizationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="672" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="16" selection-start="0" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="210" />
@@ -591,11 +1121,6 @@
         <state line="0" column="0" selection-start="0" selection-end="587" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="41" selection-end="41" vertical-scroll-proportion="0.021560576" vertical-offset="0" max-vertical-offset="974" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="32" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0" vertical-offset="1218" max-vertical-offset="2730" />
@@ -606,44 +1131,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/template/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="1323" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_092034_create_locations_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="535" selection-end="535" vertical-scroll-proportion="0.4637224" vertical-offset="0" max-vertical-offset="951" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="18" selection-start="242" selection-end="1515" vertical-scroll-proportion="0.7949527" vertical-offset="0" max-vertical-offset="1197" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/localizations/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="8" selection-start="2588" selection-end="3389" vertical-scroll-proportion="0.2587269" vertical-offset="1512" max-vertical-offset="2856" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_092104_create_events_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="951" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_092119_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="245" selection-end="245" vertical-scroll-proportion="0.28028747" vertical-offset="0" max-vertical-offset="974" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/events/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="0" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="3171" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0862423" vertical-offset="0" max-vertical-offset="974" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Localization.php">
@@ -661,24 +1156,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2016" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/localizations/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="135" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2184" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="25" selection-start="569" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="2184" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/localizations/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="165" column="27" selection-start="5254" selection-end="5254" vertical-scroll-proportion="0.0" vertical-offset="3465" max-vertical-offset="4956" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/LocalizationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="5" selection-start="848" selection-end="857" vertical-scroll-proportion="0.46731234" vertical-offset="622" max-vertical-offset="1596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
@@ -686,40 +1166,192 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/views/events/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="437" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4200">
+        <state line="22" column="61" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/localizations/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38809034" vertical-offset="378" max-vertical-offset="4956" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_092104_create_events_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_092034_create_locations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="36" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_092119_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="443" selection-end="443" vertical-scroll-proportion="0.41955835" vertical-offset="0" max-vertical-offset="951">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="698" selection-end="698" vertical-scroll-proportion="0.45277208" vertical-offset="0" max-vertical-offset="974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="157" selection-end="157" vertical-scroll-proportion="0.28028747" vertical-offset="0" max-vertical-offset="974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SessionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="27" selection-start="533" selection-end="533" vertical-scroll-proportion="0.5821355" vertical-offset="0" max-vertical-offset="974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="43" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1432" selection-end="1438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
+          <folding>
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402431553000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/localizations/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="951">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1785">
+        <state line="91" column="42" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2163">
+          <folding>
+            <marker date="1402947557000" expanded="true" signature="71:129" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="147:1221" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="191:1213" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="233:1202" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="253:409" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="474:1161" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="709:1143" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1377:1487" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1417:1480" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1453:1469" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1655:2363" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1695:2356" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1731:2345" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="1770:1981" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="2018:2085" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="2124:2330" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="2431:3253" placeholder="..." />
+            <marker date="1402947557000" expanded="true" signature="2466:3242" placeholder="{...}" />
+            <marker date="1402947557000" expanded="true" signature="2526:2693" placeholder="{...}" />
+            <marker date="1402947557000" expanded="true" signature="2611:2681" placeholder="{...}" />
+            <marker date="1402947557000" expanded="true" signature="2756:3233" placeholder="{...}" />
+            <marker date="1402947557000" expanded="true" signature="2887:3221" placeholder="{...}" />
+            <marker date="1402947557000" expanded="true" signature="2912:3175" placeholder="{&quot;type&quot;: &quot;POST&quot;...}" />
+            <marker date="1402947557000" expanded="true" signature="3091:3157" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/template/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1512">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="780" selection-end="780" vertical-scroll-proportion="0.39747635" vertical-offset="0" max-vertical-offset="951">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="44" selection-start="4395" selection-end="4395" vertical-scroll-proportion="0.0" vertical-offset="2457" max-vertical-offset="4221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="19" selection-start="0" selection-end="4068" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="2352">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/localizations/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="53" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2352">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LocalizationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="115" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0" vertical-offset="771" max-vertical-offset="1722">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/EventsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="61" selection-start="1639" selection-end="1654" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1596">
+        <state line="71" column="85" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.80126184" vertical-offset="729" max-vertical-offset="1743">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="61" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1281">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/localizations/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38809034" vertical-offset="378" max-vertical-offset="4956">
-          <folding>
-            <marker date="1402933547000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
