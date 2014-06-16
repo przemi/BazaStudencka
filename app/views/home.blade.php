@@ -16,7 +16,7 @@
             </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
         {{ Form::close() }}
-        {{ Form::open(['route' => 'events.search', 'method' => 'post']) }}
+        {{ Form::open(['route' => 'localizations.search', 'method' => 'post']) }}
         <div class="col-lg-6">
             <div class="input-group">
                 <input type="text" name="search" class="form-control">

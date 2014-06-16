@@ -44,24 +44,6 @@
     </div>
 </div>
 
-<!-- small modal -->
-<div class="modal fade bs-example-modal-sm" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Usuwanie wydarzenia</h4>
-            </div>
-            <div class="modal-body">
-                Potwierdź usunięcie wydarzenia.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" id="delete">Usuń</button>
-            </div>
-        </div>
-    </div>
-</div>
 @stop
 
 @section('headerJs')
@@ -73,23 +55,6 @@
             hrf = $(this).attr('target');
             $.get( hrf, function( data ) {
                 $('#modal .modal-content').html(data);
-            });
-        });
-
-        $('.table').on('click', '.delete_event', function(){
-            hrf = $(this).attr('target');
-            $('#modal-delete').modal('show');
-            $('#delete').click(function(){
-                $.ajax({
-                    type: "POST",
-                    url: hrf,
-                    assync:false,
-                    cache:false,
-                    success: function( data ) {
-                        location.reload();
-                    }
-                });
-                return false;
             });
         });
 

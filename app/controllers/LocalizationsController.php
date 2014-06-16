@@ -69,8 +69,9 @@ class LocalizationsController extends BaseController {
     }
 
     public function search(){
-        $localizations = Localization::where('name', 'LIKE', "%".Input::get('search')."%")->where('active', '=', '1')->with('user')->get();
+        $search = Input::get('search');
+        $localizations = Localization::where('name', 'LIKE', "%$search%")->where('active', '=', '1')->with('user')->get();
 
-        return View::make('localizations.search', compact('$events'));
+        return View::make('localizations.search', compact('localizations', 'search'));
     }
 }
