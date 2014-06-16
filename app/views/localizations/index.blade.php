@@ -19,8 +19,9 @@
                    <td>{{ $loc->city }} {{ $loc->street }}</td>
                    <td>{{ $loc->user->nick }}</td>
                    <td>
-                        <button type="button" class="btn btn-primary btn-sm show_localization" target="{{ URL::route('localizations.view', array($loc->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
-                        <button type="button" class="btn btn-danger btn-sm delete_localization" target="{{ URL::route('localizations.delete', array($loc->id)) }}"  >Usuń</button>
+                       <button type="button" class="btn btn-primary btn-sm show_localization" target="{{ URL::route('localizations.view', array($loc->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
+                       <a href="{{ route('localizations.edit', array($loc->id)) }}"><button type="button" class="btn btn-primary btn-sm show_localization">Edytuj</button></a>
+                       <button type="button" class="btn btn-danger btn-sm delete_localization" target="{{ URL::route('localizations.delete', array($loc->id)) }}"  >Usuń</button>
                    </td>
                </tr>
                @endforeach

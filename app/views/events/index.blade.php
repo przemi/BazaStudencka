@@ -22,6 +22,7 @@
                    <td>{{$event->user->nick}}  </td>
                    <td>
                        <button type="button" class="btn btn-primary btn-sm show_event" target="{{ URL::route('events.view', array($event->id)) }}" data-toggle="modal" data-target="#modal" >Szczegóły</button>
+                       <a href="{{ route('events.edit', array($event->id)) }}"><button type="button" class="btn btn-primary btn-sm show_localization">Edytuj</button></a>
                        <button type="button" class="btn btn-danger btn-sm delete_event" target="{{ URL::route('events.delete', array($event->id)) }}"  >Usuń</button>
                    </td>
                </tr>

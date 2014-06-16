@@ -31,7 +31,8 @@ class EventsController extends BaseController {
 
     public function showEdit($id)
     {
-        return View::make('events.edit');
+        $event = Events::find($id);
+        return View::make('events.edit', compact('event'));
     }
 
     public function showEvent($id)
@@ -50,6 +51,18 @@ class EventsController extends BaseController {
         $event->save();
 
         return 0;
+    }
+
+    public function save($id)
+    {
+        $event = Events::find($id);
+        $event->name = Input::get('name');
+        $event->date = Input::get('date');
+        $event->info = Input::get('info');
+        $event->localization_id = Input::get('localization_id');
+        $event->save();
+
+        return Redirect::route('$events.index');
     }
 
 }

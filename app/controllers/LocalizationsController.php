@@ -32,7 +32,9 @@ class LocalizationsController extends BaseController {
 
     public function showEdit($id)
     {
-        return View::make('localizations.edit');
+        $localization = Localization::find($id);
+        return View::make('localizations.edit', compact('localization'));
+
     }
 
     public function showLocalization($id)
@@ -51,5 +53,18 @@ class LocalizationsController extends BaseController {
         $localization->save();
 
         return 0;
+    }
+
+    public function save($id)
+    {
+        $localization = Localization::find($id);
+        $localization->name = Input::get('name');
+        $localization->city = Input::get('city');
+        $localization->street = Input::get('street');
+        $localization->lat = Input::get('lat');
+        $localization->lng = Input::get('lng');
+        $localization->save();
+
+        return Redirect::route('localizations.index');
     }
 }
