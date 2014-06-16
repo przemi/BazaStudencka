@@ -32,7 +32,9 @@ class EventsController extends BaseController {
     public function showEdit($id)
     {
         $event = Events::find($id);
-        return View::make('events.edit', compact('event'));
+        $localizations = Localization::where('active', '=', '1')->get();
+
+        return View::make('events.edit', compact('event', 'localizations'));
     }
 
     public function showEvent($id)
