@@ -62,7 +62,7 @@ class EventsController extends BaseController {
         $event->localization_id = Input::get('localization_id');
         $event->save();
 
-        return Redirect::route('$events.index');
+        return Redirect::route('events.index');
     }
 
 }

@@ -10,26 +10,30 @@
 
             <div class="form-group">
                 <label for="name">Nazwa wydarzenia:</label>
-                <input type="text" class="form-control" id="name" name="name" placeHolder="Tutaj wpisz nazwę nowego wydarzenia">
+                <input type="text" class="form-control" id="name" name="name" placeHolder="Tutaj wpisz nazwę nowego wydarzenia" value="{{ event->name }}">
             </div>
 
             <div class="form-group">
                 <label for="date">Termin wydarzenia:</label>
-                <input type="text" class="form-control" id="date" name="date" placeHolder="Tutaj wpisz datę wydarzenia">
+                <input type="text" class="form-control" id="date" name="date" placeHolder="Tutaj wpisz datę wydarzenia" value="{{ event->date }}">
             </div>
 
             <div class="form-group">
                 <label for="localization">Lokalizacja wydarzenia:</label>
                 <select class="form-control" id="localization" name="localization" >
                     @foreach($localizations as $k => $loc)
-                        <option value="{{ $loc->id }}">{{ $loc->name }} - {{ $loc->city }} {{ $loc->street }}</option>
+                        @if( $event->localization->name == $loc->name){
+                            <option value="{{ $loc->id }}"  selected="selected">{{ $loc->name }} - {{ $loc->city }} {{ $loc->street }}</option>
+                        @} else {
+                            <option value="{{ $loc->id }}">{{ $loc->name }} - {{ $loc->city }} {{ $loc->street }}</option>
+                        @}
                     @endforeach
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="info">Opis wydarzenia:</label>
-                <textarea class="form-control" id="info" name="info" ></textarea>
+                <textarea class="form-control" id="info" name="info" >{{ event->info }}</textarea>
             </div>
 
             <div class="form-group">
